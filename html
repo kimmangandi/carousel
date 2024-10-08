@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .carousel-container {
+      width: 100%;
+      max-width: 500px;
+      overflow: hidden;
+      margin: auto;
+    }
+    .carousel {
+      display: flex;
+      animation: scroll 10s linear infinite;
+    }
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-300%); /* Adjust based on the number of images */ }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="image1.jpg" alt="Brand 1">
+      <img src="image2.jpg" alt="Brand 2">
+      <img src="image3.jpg" alt="Brand 3">
+      <img src="image4.jpg" alt="Brand 4">
+    </div>
+  </div>
+</body>
+</html>
